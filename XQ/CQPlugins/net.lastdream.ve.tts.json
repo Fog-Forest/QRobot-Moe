@@ -1,0 +1,69 @@
+{
+     "ret": 1,
+     "apiver": 9,
+     "appid": "net.lastdream.ve",
+     "name": "语音时代",
+     "version": "1.0.0",
+     "version_id": 1,
+     "author": "LD",
+     "description": "酷Q(2015)最早的语音聊天应用，语音应用领军者！\r\n\r\n\r\n官方交流群：495960360",
+     "event": [
+          {
+               "id": 1,
+               "type": 21,
+               "name": "私聊消息处理",
+               "function": "_eventPrivateMsg",
+               "priority": 30000
+          },
+          {
+               "id": 2,
+               "type": 2,
+               "name": "群消息处理",
+               "function": "_eventGroupMsg",
+               "priority": 30000
+          },
+          {
+               "id": 1001,
+               "type": 1001,
+               "name": "酷Q启动事件",
+               "priority": 30000,
+               "function": "_eventStartup"
+          },
+          {
+               "id": 1002,
+               "type": 1002,
+               "name": "酷Q关闭事件",
+               "priority": 30000,
+               "function": "_eventExit"
+          },
+          {
+               "id": 1003,
+               "type": 1003,
+               "name": "应用已被启用",
+               "priority": 30000,
+               "function": "_eventEnable"
+          },
+          {
+               "id": 1004,
+               "type": 1004,
+               "name": "应用将被停用",
+               "priority": 30000,
+               "function": "_eventDisable"
+          }
+     ],
+     "menu": [
+          {
+               "name": "打开界面",
+               "function": "_menuA"
+          }
+     ],
+     "status": [],
+     "auth": [
+          20,
+          30,
+          101,
+          161,
+          106,
+          130
+     ]
+}
